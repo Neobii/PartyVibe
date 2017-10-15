@@ -1,0 +1,17 @@
+<template name="partyChart">
+{{#with currentPartyVibe}}
+<h1 class="partyVibe" style="font-family: {{type}};text-align:center;color:{{fontColor}};background-color:{{bgColor}};">{{text}}</h1>
+<div style="background-image: url('/rshadow.png'), url('/rbackground.png');height:20px;margin-bottom:40px;filter:hue-rotate(192deg);"></div>
+{{/with}}
+<div class="owl-carousel">
+<div>
+{{> pieChart}}
+</div>
+<div>
+{{> lineChart}}
+</div>
+</div>
+<a href="/statement">
+<p class="statementLink"><span class="glyphicon glyphicon-book"></span> More Information</p>
+</a>
+</template>

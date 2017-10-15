@@ -1,0 +1,81 @@
+@import "colors.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+//background: -moz-linear-gradient(top, $pepto 0%, #cbe6c9 100%); /* FF3.6-15 */
+//background: -webkit-linear-gradient(top, $pepto 0%,#cbe6c9 100%); /* Chrome10-25,Safari5.1-6 */
+//background: linear-gradient(to bottom, $pepto 0%,#cbe6c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */*/
+//background-color: $pepto;
+background-image: url("/memphis-colorful.png");
+min-height: 100%;
+
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.background-pepto {
+  background-color: $pepto;
+}
+
+.background-robin {
+  
+}
+
+.chartButton {
+  @extend .linkAction;
+  background-color: $ltblue;
+  color: #007193;
+}
+
+.statement {
+  font-size:15px;
+  color: $dkgreen;
+  padding:25px 30px;
+  border-radius: 8px;
+  background-color: rgba($ltblue, .5);
+  box-shadow: 3px 3px 3px #888888;
+  margin-bottom: 55px;
+  text-align:justify;
+}
+
+.thanksLine {
+  text-align:center;
+  color:#A56928;
+}
+
+.statementLink {
+  background-color: rgba($pepto, .9);
+  @extend .linkAction;
+  color:#FFF;
+}
+
+.partyVibe {
+  padding-top:100px;
+  padding-bottom:85px;
+  margin:0;
+}
+
+.partyVibe:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+
+}
+.linkAction {
+  box-shadow:3px 3px 3px #888888;
+  font-weight:bold;
+  text-align:center;
+  font-size:25px;
+  padding:20px;
+  cursor:pointer;
+  margin-left:40px;
+  margin-right:40px;
+}
